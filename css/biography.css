@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    background: #54BAB9;
+    overflow-x: hidden;
+    padding-left: 17rem;
+}
+.container{
+    background-color: red;
+    width: 100%;
+    height: 500rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background: #333;
+    color:#fff;
+    cursor:pointer;
+    margin-top: 1rem;
+    font-size:2rem;
+    border-radius: 5rem;
+}
+.btn i{
+    padding: 0 .5rem;
+    font-size: 1.8rem;
+}
+
+.btn:hover{
+    background: green;
+}
+
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    font-size:4rem;
+    padding:1rem;
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
+}
+.heading span{
+    color: yellow;
+}
+
+header{
+    position:fixed;
+    top:0px;
+    left:0;
+    z-index:1000;
+    height:100%;
+    width:20rem;
+    background: #18978F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    box-shadow: 3px 10px 5px rgb(7, 7, 7);
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+header .user img{
+    height:7rem;
+    width:7rem;
+    border-radius:50%;
+    object-fit: cover;
+    object-position: top -9px right 0px ;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 3px 10px 3px rgb(34, 33, 33);
+}
+
+header .user{
+    margin-top: 3rem;
+
+}
+header .user h3{
+    font-size: 1rem;
+    color:#00FFAB;
+
+}
+
+header .user p{
+    font-size: 1rem;
+    color:#00FFAB;
+
+}
+
+header .navbar{
+    width:100%;
+}
+
+header .navbar ul{
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    display:block;
+    padding: .5rem;
+    margin: 1.2rem 0;
+    background: #54BAB9;
+    color: #00FFAB;
+    font-size: 2 rem;
+    border-radius:1rem;
+    box-shadow: 2px 5px 2px rgb(34, 33, 33);
+
+}
+ 
+header .navbar ul li a:hover{
+    background:#53BF9D;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+.home h3{
+    font-size: 2.5rem;
+    color:#fff;
+
+}
+
+.home h1{
+    font-size: 5rem;
+    color:#fff;
+    
+}
+
+.home p{
+    font-size: 2rem;
+    color:#eee;
+    padding: 1rem 0;
+    
+}
+
+.about-section{
+    margin-left: 5rem;
+}
+
+.about{
+    background-color: #00FFAB;
+    height: 450px;
+    width: 750px;
+    padding:35px;
+    margin-top: 50px;
+    box-shadow: 1px 4px 1px rgb(34, 33, 33);
+}
+
+.about img{
+    float: right;
+    height: 350px;
+    width: 550px;
+    margin-left: 10px;
+    box-shadow: 1px 4px 1px rgb(34, 33, 33);
+}
+.about .para1{
+    margin-bottom: 10px;
+    
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+
+/* education  card left */
+
+  /* Float four columns side by side */
+  .education-column-left {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  /* .education{
+        margin: 0 -5rem;
+    } */
+
+
+  
+  /* Clear floats after the columns */
+  .education-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .education-column-left {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .education-card-left {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    padding-left: 5rem;
+    margin-left: -5rem;
+    padding-top: 40px;
+    text-align: center;
+    background-color: #5FD068;
+    height:100px;
+    border-top-right-radius: 7rem;
+    border-bottom-right-radius: 7rem;
+    box-shadow: 1px 4px 1px rgb(34, 33, 33);
+  }
+
+  .education-card-left:hover{
+    background:#40DFEF;
+    box-shadow: 3px 10px 3px rgb(34, 33, 33);
+}
+
+/* education card right */
+
+  /* Float four columns side by side */
+  .education-column-right {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .education-column-right {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .education-card-right {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #5EE6EB;
+    height:100px;
+    width: 600px;
+    box-shadow: 1px 4px 1px rgb(34, 33, 33);
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+
+  .education-card-right:hover{
+    background:#40DFEF;
+    box-shadow: 3px 10px 3px rgb(34, 33, 33);
+}
+
+.education-card-right h4{
+    padding-top: 10px;
+}
+
+.education-card-right p{
+    padding-bottom: 10px;
+}
+
+
+/* skill section */
+.skills {
+    margin-bottom: 5rem;
+}
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 5rem;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #5EE6EB;
+    height:100px;
+    box-shadow: 1px 3px 1px rgb(34, 33, 33);
+    border-radius: 10rem;
+  }
+
+  .card:hover{
+    background:#40DFEF;
+    box-shadow: 3px 5px 3px rgb(34, 33, 33);
+}
+
+.card h3{
+    padding-top: 25px;
+}
+
+.single-skill-row{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: -5rem;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #00FFAB;
+    height:50px;
+    width: 350px;
+    box-shadow: 1px 3px 1px rgb(34, 33, 33);
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+.single-skill-row p{
+    padding-top: 15px;
+    padding-left: 7rem;
+}
+
+.single-skill-row:hover{
+    background:#40DFEF;
+    box-shadow: 3px 5px 3px rgb(34, 33, 33);
+}
+
+
+/* contact me */
+.contact-section{
+    margin-left: 5rem;
+}
+
+.contact{
+    background-color: #00FFAB;
+    height: 450px;
+    width: 750px;
+    padding:35px;
+    margin-top: 50px;
+    box-shadow: 1px 4px 1px rgb(34, 33, 33);
+}
+
+
+.contact .info{
+    background-color: #5FD068;
+    height: 50px;
+    width: 650px;
+    color: #00FFAB;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-left: 5px;
+    box-shadow: 1px 3px 1px rgb(34, 33, 33);
+}
+
+.location{
+    height: 350px;
+    width: 650px;
+    text-align: center;
+}
+
+.address {
+    float: left;
+    height: 300px;
+    width:300px;
+    margin: 10px;
+}
+.jp{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 2px 1px rgb(34, 33, 33);
+}
+.np{
+    width: 100%;
+    height:100%;
+    box-shadow: 1px 2px 1px rgb(34, 33, 33);
+}
+.location .address h1{
+    padding-bottom: 5px;
+    color:#3F4E4F ;
+}
+
+/* hobbies secton */
+.hobbies{
+    margin-left: 5rem;
+    margin-top: 50px;
+    background-color: red;
+    height: 850px;
+    width: 700px;
+    box-shadow: 1px 2px 1px rgb(34, 33, 33);
+}
+
+.arrow {
+    border: solid #3A5BA0;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform:rotate(-45deg);
+  }
+
+.hobby{
+    background-color: #CDF0EA;
+    padding: 10px;
+}
+
+.hobby img{
+    height: 300px;
+    width: 560px;
+}
+
+.hobby .title{
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+}
+
+.hobby .contents{
+    padding-bottom: 15px;
+}
+.hobby audio{
+    width: 560px;
+}
+
+/* work experience */
+.work-experience{
+    margin-left: 15rem;
+    margin-top: 50px;
+    background-color: #CDF0EA;
+    height: 540px;
+    width: 450px;
+    box-shadow: 1px 2px 1px rgb(34, 33, 33);
+}
+
+.work-experience:hover{
+    box-shadow: 1px 4px 1px rgb(34, 33, 33);
+}
+
+.work{
+    background-color: red;
+    box-shadow: 1px 5px 5px rgb(34, 33, 33);
+}
+
+.work-experience table {
+    padding-left: 20px;
+    padding-top: 50px;
+    
+}
+
+.work-experience table td{
+    padding-top: 10px;
+    padding: 5px;
+} 
+
+.work-experience h4{
+    padding-left: 5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: blue;
+    box-shadow: 1px 5px 3px rgb(34, 33, 33);
+}
+
+.work-experience ul{
+    margin-left: 12rem;
+    list-style: none;
+}
+
+.work-experience ul li{
+    background-color: green;
+    margin-top: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    box-shadow: 1px 5px 3px rgb(34, 33, 33);
+
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 3rem;
+}
+
+
+/* footer section */
+.footer{
+    background-color: #14C38E;
+    box-shadow: 2px -4px 2px rgb(7, 7, 7);
+    margin-top: 5rem;
+}
+
+.footer p{
+    padding-left:20rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+
+  
+
+
+
+
+
+
+
+
+
